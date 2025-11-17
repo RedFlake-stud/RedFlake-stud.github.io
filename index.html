@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
 
   <!-- =======================================================
   * Template Name: MinimalFolio
@@ -40,9 +41,42 @@
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">MinimalFolio</h1>
       </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
   </header>
 
@@ -54,7 +88,7 @@
         <div class="row align-items-center gx-5 gy-5">
           <div class="col-lg-7">
             <div class="intro" data-aos="fade-right" data-aos-delay="150">
-              <h1 class="display-heading mb-3">Mano Web CV</h1>
+              <h1 class="display-headingg mb-3">Mano Web CV</h1>
               <div class="meta mt-4 d-flex flex-wrap align-items-center gap-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="meta-item d-flex align-items-center gap-2">
                   <i class="bi bi-geo-alt"></i>
@@ -90,13 +124,34 @@
         <div class="row align-items-center justify-content-between intro-wrap gy-5">
           <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
             <div class="intro-content">
-              <h2 class="headline">Sveiki. Aš esu Mindaugas Moisiejus — Vilnius TECH universiteto antro kurso studentas studijuojantis Dirbtinio intelekto sistemas.</h2>
+              <h2 class="headlinee">Sveiki. Aš esu Mindaugas Moisiejus — Vilnius TECH universiteto antro kurso studentas studijuojantis Dirbtinio intelekto sistemas.</h2>
               <p class="lead">Mano studijos apima dirbtinio intelekto, programinių kalbų, matematikos bei elektronikos pagrindus. Domiuosi programavimu, dirbtiniu intelektu bei įvairiomis naujomis technologijomis. Mano hobiai yra filmų, serialų žiūrėjimas, vaizdo žaidimai, įvairūs komiksai.
- </p>
+              </p>
+                <h3>Mano įgūdžiai</h3>
+                  <ul class="custom-ul">
+                    <li>Programavimo kalbos
+                      <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML / CSS</li>
+                      </ul>
+                    </li>
+                    <li>Dirbtinis intelektas</li>
+                    <li>Elektronika ir litavimas</li>
+                  </ul>
 
+                  <h3>Mano tikslai</h3>
+                  <ol class="custom-ol">
+                    <li>Tobulinti AI žinias</li>
+                    <li>Pagerinti programavimo įgūdžius</li>
+                    <li>Išmokti naujus įrankius</li>
+                  </ol>
+
+              
+ 
               <div class="cta-group">
-                <a href="#portfolio" class="btn-ghost">Mano darbai <i class="bi bi-arrow-down"></i></a>
-                <a href="#resume" class="link-underline">Resume <i class="bi bi-download"></i></a>
+                <a href="#portfolio" class="btn-mep">Mano darbai <i class="bi bi-arrow-down"></i></a>
+                <a href="#resume" class="btn-mer">Resume <i class="bi bi-download"></i></a>
               </div>
             </div>
           </div>
@@ -108,6 +163,7 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!-- /About Section -->
 
@@ -164,6 +220,42 @@
       </div>
     </section>
     <!-- /Portfolio Grid -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Paslaugos</h2>
+      </div><!-- End Section Title -->
+
+      <div>
+        <table class="mano-lentele">
+        <tr>
+          <th>Paslauga</th>
+          <th>Aprašymas</th>
+          <th>Kaina, Eur</th>
+        </tr>
+        <tr>
+          <td>Svetainės kūrimas</td>
+          <td>Čia tik asmeninės svetainės kūrimas</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Paprastos programavimo problemos sprendimas</td>
+          <td>Naudojant anksčiau minėtas programavimo kalbas</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Sulituoti schema</td>
+          <td>Litavimas nebus gražus todėl kaina irgi atitinkama</td>
+          <td>40</td>
+        </tr>
+        </table>
+      </div>
+
+    </section><!-- /Services Section -->
+
 
     <!-- Media Section -->
     <section id="media" class="media section">
