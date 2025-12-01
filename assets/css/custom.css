@@ -283,3 +283,29 @@ h6{
     } */
 }
 
+.success-popup {
+  display: none;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.input-error {
+  border: 2px solid #ff4d4d !important;
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
