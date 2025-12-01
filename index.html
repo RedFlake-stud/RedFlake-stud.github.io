@@ -287,6 +287,104 @@
     </section>
     <!-- /Media Section -->
 
+        <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-stretch">
+          <div class="col-lg-7 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-form-container">
+              <div class="form-intro">
+                <h2>Let's Start a Conversation</h2>
+              </div>
+
+              <form action="forms/contact.php" method="post" class="php-email-form contact-form">
+                <div class="row">
+                  <div>
+                    <div class="form-field">
+                      <input type="text" name="firstName" class="form-input" id="firstName" placeholder="Your First Name" required="">
+                      <label for="userName" class="field-label">First Name</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="text" name="lastName" class="form-input" id="lastName" placeholder="Your Last Name" required="">
+                      <label for="userName" class="field-label">Last Name</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="email" name="email" class="form-input" id="userEmail" placeholder="Your Email" required="">
+                      <label for="userEmail" class="field-label">Address</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="tel" name="phonenumber" class="form-input" id="userPhone" placeholder="Your Phone">
+                      <label for="userPhone" class="field-label">Phone</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="text" name="address" class="form-input" id="userAddress" placeholder="Your Address">
+                      <label for="userAddress" class="field-label">Address</label>
+                    </div>
+                  </div>
+
+          
+                  <div>
+                    <div class="form-field">
+                      <input type="range" class="form-input" id="Q1" min="1" max="10" step="1" required="">
+                      <label for="messageSubject" class="field-label">Kiek aš jus sudominau?</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="range" class="form-input" id="Q2" min="1" max="10" step="1" required="">
+                      <label for="messageSubject" class="field-label">Kiek jums buvo naudinga informacija?</label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-field">
+                      <input type="range" class="form-input" id="Q3" min="1" max="10" step="1" required="">
+                      <label for="messageSubject" class="field-label">kiek patiko kaip svetainė atrodo?</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                  Send Message
+                  <span class="button-arrow">→</span>
+                </button>
+              </form>
+              <div id="formOutput" style="margin-top: 20px; padding: 10px;"></div>
+              <div id="successPopup" class="success-popup">Duomenys pateikti sėkmingai!</div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="300">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
   </main>
 
   <footer id="footer" class="footer">
@@ -323,5 +421,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
