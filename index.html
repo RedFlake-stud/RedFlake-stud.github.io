@@ -385,7 +385,53 @@
       </div>
     </section><!-- /Contact Section -->
 
-  </main>
+  <!-- Memory Game Section -->
+  <section id="memory-game" class="memory-section section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Mano Žaidimas</h2>
+      <p>Trumpas atminties kortelių žaidimas integruotas į CV.</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="memory-wrap d-flex flex-column flex-lg-row gap-4">
+
+        <div class="memory-left">
+          <div class="controls mb-3 d-flex align-items-center gap-2">
+            <label for="difficulty" class="mb-0">Sunkumo lygis:</label>
+            <select id="difficulty" class="form-select form-select-sm" style="width: auto;">
+              <option value="easy">Lengvas (4×3)</option>
+              <option value="hard">Sunkus (6×4)</option>
+            </select>
+
+            <button id="startBtn" class="btn btn-primary btn-sm">Start</button>
+            <button id="resetBtn" class="btn btn-outline-secondary btn-sm">Atnaujinti</button>
+          </div>
+
+          <div id="boardContainer" class="board-container">
+
+          </div>
+
+          <div id="winMessage" class="win-message" aria-live="polite" style="display:none; margin-top:10px; font-weight:700;">Laimėjote!</div>
+        </div>
+
+        <aside class="memory-right p-3 rounded-2">
+          <h4>Statistika</h4>
+          <p>Ėjimų skaičius: <span id="moves">0</span></p>
+          <p>Sutapusių porų: <span id="matches">0</span></p>
+          <p>Laikas: <span id="timer">00:00</span></p>
+          <hr>
+          <h5>Geriausi rezultatai</h5>
+          <p>Lengvas: <span id="best-easy">—</span> ėjimų</p>
+          <p>Sunkus: <span id="best-hard">—</span> ėjimų</p>
+        </aside>
+
+      </div>
+    </div>
+
+  </section>
+
+
+</main>
 
   <footer id="footer" class="footer">
     <div class="container">
@@ -398,7 +444,6 @@
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
     <i class="bi bi-arrow-up-short"></i>
   </a>
